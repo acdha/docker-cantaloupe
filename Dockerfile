@@ -36,7 +36,7 @@ EXPOSE 8182
 VOLUME /imageroot
 
 RUN apt-get update -qy && apt-get dist-upgrade -qy && \
-    apt-get install -qy --no-install-recommends curl imagemagick ffmpeg gettext unzip default-jre-headless && \
+    apt-get install -qy --no-install-recommends curl imagemagick gettext unzip default-jre-headless && \
     apt-get -qqy autoremove && apt-get -qqy autoclean
 
 # Install the patched openjpeg2 tools
